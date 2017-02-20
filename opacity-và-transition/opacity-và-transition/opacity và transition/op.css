@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.swrap {
+  width: 1000px;
+  margin: auto;
+
+}
+
+body{
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 500;
+  background-color: #FFFFFF;   
+}
+
+
+
+
+h1 {
+  background: #333;
+  margin: 25px 0;
+  font-size: :3em;
+  line-height: 1.5em;
+  font-family: Georgia;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: red;
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 26%;
+  padding: 36px;
+
+
+}
+
+.thumb{
+  padding: 4px;
+  border: 1px solid #ddd;
+  
+  margin-bottom: 20px;
+  
+
+}
+
+.thumb img{
+  vertical-align: middle;
+  opacity: 1;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.thumb img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+}
+
+
+
+
+
+
+
