@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="normal.css"/> <!--reset css-->
+	<link rel="stylesheet" href="style.css"/><!--css cho website-->
+	<!-- import icon font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Import thư viện JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+// kéo xuống khoảng cách 15px thì xuất hiện nút Top-up
+var offset = 15;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 250;
+$(function(){
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > offset)
+			$('#top-up').fadeIn(duration);else
+		$('#top-up').fadeOut(duration);
+	});
+	$('#top-up').click(function () {
+		$('body,html').animate({scrollTop: 0}, duration);
+	});
+});
+</script>
+<div title="Back to Top" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'" id="top-up">
+	<i class="fa fa-space-shuttle fa-rotate-270"></i></div>
+	<style>
+		#top-up {
+			background:none;
+			font-size: 3em;
+			text-shadow:0px 0px 5px #c0c0c0;
+			cursor: pointer;
+			position: fixed;
+			z-index: 9999;
+			color:blue;
+			bottom: 20px;
+			right: 15px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<ul>
+				<li><a href="">Trang chủ</a></li>
+				<li>
+					<a href="">Dịch vụ</a>
+					<ul class="sub-menu">
+						<li> <a href="">WordPress </a></li>
+						<li><a href="">SEO</a></li>
+						<li><a href="">Hosting</a></li>
+					</ul>
+				</li>
+				<li><a href="">Hỏi Đáp</a></li>
+				<li><a href="">Diễn Đàn</a></li>
+				<li><a href="">Liên Hệ</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="header">
+				<div id="logo"><img src="img/html-css.png" alt="HTML"></div>
+				<div id="slogan">
+					<p>Học HtmL/Css cơ bản cho người mới bắt đầu</p>
+				</div>
+			</div>
+			<div class="action">
+				<h3>Bạn sẽ được học những gì</h3>
+				<p>Cung cấp các kiến thức về HTML và CSS cơ bản để bạn tự thiết kế website với HTML và CSS</p>
+			</div>
+			<div class="row" id="intro">
+				<div id="box1" class="col">
+					<h2>CSS</h2>
+					<img src="img/css-icon.png" alt="CSS"/>
+					<p>Trong lĩnh vực xây dựng, chúng ta có trang trí nội thất; trong lĩnh vực thẩm
+						mỹ - làm đẹp, chúng ta có kỹ thuật make-up; còn trong lĩnh vực thiết kế web chúng
+						ta có CSS. Đây chỉ là một định nghĩa giàu hình ảnh của Pearl thôi (nhưng cũng
+						thực tế nhỉ (smile). Còn CSS (Cascading Style Sheets mà Pearl tạm dịch là tờ mẫu
+						theo Style Sheets) là một ngôn ngữ quy định cách trình bày cho các tài liệu viết
+						bằng HTML, XHTML, XML, SVG, hay UML,…</p>
+					</div>
+					<div id="box2" class="col">
+						<h2>HTML</h2>
+						<img src="img/html-icon.png" alt="HTML"/>
+						<p>HTML( Hypertext Markup Language): Ngôn ngữ đánh dấu siêu văn bản, đưa vào
+							chuẩn web năm 1994.
+							HTML là 1 ngôn ngữ đánh dấu chứ không phải 1 ngôn ngữ lập trình, nhằm tạo ra
+							các trang web tĩnh dựa trên các thẻ đánh dấu( tags), dựa vào các thẻ đánh dấu để
+							trình duyệt xác định cách hiển thị.</p>
+						</div>
+						<div id="box3" class="col">
+							<h2>URL</h2>
+							<img src="img/url-icon.png" alt="URL"/>
+							<p>
+								Ngày nay, với tốc độ phát triển cực mạnh của Internet, hàng ngày có rất nhiều các tên miền mới xuất hiện mang đến nhiều tài nguyên đa dạng, phong phú hơn. Chúng ta không phải và cũng không thể nhớ hết các URL được. Vì thế các danh bạ website, máy tìm kiếm ra đời và chúng được sử dụng phổ biến, máy tìm kiếm được sử dụng rộng rãi hơn cả, không thể không kể đến Google, máy tìm kiếm được sử dụng nhiều nhất trên thế giới.
+							</p>
+						</div>
+
+					</div>
+					<div id="footer">
+						<p>Copyright &copy; 2017 www.blog.com</p>
+
+					</div>
+				</div>
+			</div>
+
+		</body>
+		</html>
